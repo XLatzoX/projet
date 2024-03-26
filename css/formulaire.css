@@ -1,0 +1,359 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wdth,wght@0,200,500;1,200,500&display=swap');
+@font-face {
+    font-family: 'Fira Sans Four';
+    src: url('../polices/FiraSans-Four.ttf'), format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*{ box-sizing: border-box;}
+@keyframes translater{ 
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    50.005%{
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    
+    100%{
+        transform: translateY(0);
+    }
+}
+html{
+    overflow-x: hidden;
+    background: radial-gradient( rgb(79, 79, 79), rgb(50, 50, 50), rgba(0, 0, 0, 1));
+}
+body{
+    width: 100%;
+    height: 420vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header{
+    width: 100%;
+    margin: 0;  
+    padding: 0;
+    z-index: 1;
+}
+main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 400vh;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+#navbar{
+    width: 100%;
+    height: 15vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    z-index: 2;
+}
+
+#logo{
+    width: 25%;  
+    display: flex;
+    background: #ffffff;
+    background-clip: text;
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+#cities{
+    width: 75%;
+    font-family: bahnschrift;
+    font-weight: 100;
+}
+#logo h1{
+    margin-left: 2.5vw;
+    font-size: 1rem;
+    font-family: bahnschrift;
+    font-weight: 200;
+    color: transparent;
+    letter-spacing: 0.7vw;
+    text-shadow: 1px 1px 4px #727272;  
+}
+#logo:hover{
+    background: linear-gradient(90deg, #ff68cc, #dc5fff, #a080ff, #7f99ff);
+    background-clip: text;
+    transform: scale(1.025);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#logo:hover h1{
+    color: transparent;
+    transition: 0.3s;
+}
+#logo:hover h1:hover{
+    color:  transparent;
+}
+#nav_list{ 
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    list-style-type: none;
+    color: #ffffff;
+}
+#nav_list li{
+    margin: 0 30px 0 0;
+}
+
+
+
+
+
+
+
+
+#nav_list li:hover{}
+#nav_list li a{ 
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: 1px 1px 4px#363535;
+}
+section{
+    z-index: 1;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+} 
+
+
+
+.pad{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 100px 30px 75px 30px;
+    z-index: 1;
+}
+.pad > div{
+    width: 100%;
+}
+
+
+
+.descriptions .paragraph{
+    font-weight: 300; 
+    text-shadow: 1px 1px 10px #000000;
+}
+
+
+
+
+.sections{
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    padding: 0;
+    width: 60vw;
+    height: 90vh;
+    box-shadow: 0px 3px 20px black;
+}
+
+#section_2{
+    background: url(../images/form_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+
+
+
+
+
+
+.descriptions{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    padding: 0 10vh;
+}
+.descriptions .paragraph{
+    display: block;
+    width: 100%;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    text-align: center;
+    font-size: large;
+    font-family: bahnschrift;
+    font-weight: 200;
+    font-style: italic; 
+    text-shadow: 1px 1px 10px #000000;
+    line-height: 30px;
+}
+.sections nav{
+    position: absolute;
+    z-index: 99;
+}
+.sections nav #cities{
+    padding-left:0px;
+    font-size:0.9rem;
+    font-weight: 800;
+}
+
+
+.container {
+    display: flex;
+    width: 25vw;
+    height: 100%;
+    margin: auto;
+    max-width: 99%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 5vh;
+    overflow: hidden;
+    background-color: #ffffff25;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.03);
+    border: 0.1px solid rgba(128, 128, 128, 0.178);
+  }
+  
+  .left {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 3vh;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    backdrop-filter: blur(5px);
+    position: relative;
+  }
+  
+  .form::before {
+    position: absolute;
+    content: "";
+    width: 40%;
+    height: 40%;
+    right: 1%;
+    z-index: -1;
+    background: radial-gradient(
+      circle,
+      rgb(194, 13, 170) 20%,
+      rgb(26, 186, 235) 60%,
+  
+      rgb(26, 186, 235) 100%
+    );
+    filter: blur(70px);
+    border-radius: 50%;
+  }
+  
+  .right {
+    width: 34%;
+    height: 100%;
+  }
+  
+  .img {
+    width: 100%;
+    height: 100%;
+  }
+  
+ 
+  
+  .input,
+  #submit {
+    background: rgba(253, 253, 253, 0.3);
+    outline: none;
+    border: 1px solid rgba(255, 0, 0, 0);
+    border-radius: 0.5rem;
+    padding: 10px;
+    margin: 10px auto;
+    width: 80%;
+    display: block;
+
+  }
+  
+  .input-block {
+    position: relative;
+  }
+  
+  label {
+    position: absolute;
+    left: 15%;
+    top: 40%;
+    pointer-events: none;
+    font-family: bahnschrift;
+    font-size: 0.8rem;
+    color: rgb(0, 0, 0);
+    opacity: 0.7;
+  }
+  
+  .input:focus + label,
+  .input:valid + label {
+    transform: translateY(-200%);
+    transition: all 0.4s;
+  }
+  
+  button {
+    background-color: #5e7eb6;
+    color: white;
+    font-size: medium;
+    box-shadow: 2px 4px 8px rgba(70, 70, 70, 0.178);
+  }
+  
+  
+  .input {
+    box-shadow: inset 4px 4px 4px rgba(165, 163, 163, 0.315),
+      4px 4px 4px rgba(218, 218, 218, 0.13);
+  }
+  #submit{
+    padding: 7px;
+    width: 40%;
+    font-size: 0.9rem;
+    background: radial-gradient(circle, rgb(79, 79, 79), rgb(50, 50, 50), rgba(25, 25, 25, 1));
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  #submit:hover{
+    color: rgba(255, 255, 255, 0.8);
+    transition: 0.2s;
+}
+input[type="text"],
+input[type="email"] {
+  /* Styles pour les inputs de type texte et email */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #333; /* Couleur du texte */
+}
+
+
+
+
