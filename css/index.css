@@ -640,19 +640,23 @@ footer{
     background-position: center;
 }
 footer div{
-    background: linear-gradient(90deg, #ff68cc, #dc5fff, #a080ff, #7f99ff);
-    background-clip: text;
-    color: transparent;
+    color: #2f3749;
     height: 10vh;
     display: flex;
     align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-weight: 600;
 }
 footer div div{
+    background: linear-gradient(90deg, #ff68cc, #dc5fff, #a080ff, #7f99ff);
+    background-clip: text;
     display: flex;
     align-items: center;
     font-size: 1rem;
     font-family: bahnschrift;
     font-weight: 200;
+    font-style: normal;
     color: transparent;
     letter-spacing: 0.7vw;
     text-shadow: 1px 1px 4px#727272;
