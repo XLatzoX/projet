@@ -13,6 +13,10 @@
 
 html{
     overflow-x: hidden;
+    background: url(../images/galerie_bg.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center;
 }
 body{
     width: 100%;
