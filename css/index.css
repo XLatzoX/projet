@@ -275,7 +275,7 @@ section{
 #boutons{
     display: flex;
     align-items: center;
-    margin-top: 9vh;
+    margin-top: 7vh;
 }
 #boutons a{
     margin-right: 75px;
